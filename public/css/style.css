@@ -1,0 +1,167 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.index-view,
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid #E60023;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.title-link, input[type=submit] {
+    background: #E60023;
+    border-radius: 999px;
+    box-shadow: black 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin: auto;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.images-container .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: sticky;
+}
+
+.div-flex img {
+    max-width: 236px;
+    border-radius: 16px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .images-container {
+        flex-direction: row;
+    }
+}
+
+.images-desc {
+    margin-left: 10px;
+    display: block;
+    width: 236px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.profile_photo {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.profile_photo img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 1px solid #aaa;
+    width: 20px;
+    height: 20px;
+}
+
+.profile_photo {
+    display: flex;
+    align-items: center
+}
+
+.profile_photo .name-user {
+    margin-left: 10px;
+    font-size: small;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.header-container .div-header-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: sticky;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.div-header-flex img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.div-header-flex i {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.div-header-flex a {
+    outline: none;
+    text-decoration: none;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    color: black;
+}
+
+.div-header-flex input {
+    display: flex;
+    width: 300px;
+    border-radius: 30px;
+}

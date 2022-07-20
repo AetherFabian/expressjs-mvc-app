@@ -45,7 +45,7 @@ passport.use('local-signin', new LocalStrategy({
         return (null, false, req.flash('signinMessage', "No User Found"));
     }
     if (!user.comparePassword(pass)){
-        return done(null, false, req.flash('signinMessage', "Incorrect Password"));
+        return done(null, false, req.flash('signinMessage', "Wrong Password"));
     }
     done(null, user);
 }

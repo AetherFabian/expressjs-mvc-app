@@ -1,169 +1,120 @@
 <%- layout('layouts/main.ejs') %>
 
-<header class="header">
-    <nav class="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand"><img class="main" src="img/Letter-J-PNG.png" alt="logo"></a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Users, Tags, Hashtags" aria-label="Search">
-                <button class="button" type="submit">Search</button>
-            </form>
-                <button class="button-nav" type="submit" ><a method="POST" href="/logout">Log out</a></button>
+    <div class="header-container">
+        <div class="div-header-flex"><img src="img/icono-pinterest.png" alt="logo"></div>
+        <div class="div-header-flex"><a href="">Home</a></div>
+        <div class="div-header-flex"><a href="">Today</a></div>
+        <div class="div-header-flex"><a href="">Create</a></div>
+        <div class="div-header-flex"><input type="search" class="input" placeholder="Search">
+        </div>
+        <div class="div-header-flex"><i class="fa-solid fa-bell"></i></div>
+        <div class="div-header-flex"><i class="fa-solid fa-comment-dots"></i></div>
+        <div class="div-header-flex"><img src="img/icon-profile.jpg" alt=""></div>
+        <div class="div-header-flex"><a href="/logout" method="GET">Logout</a></div>
+    </div>
+    <div class="images-container">
+        <div class="flex-container">
+            <div class="div-flex"><img src="img/1cd8e5b42a5b0ea42cfe855bd3e7dd04.jpg" alt="">
+                <span class="images-desc">Rei and Asuka</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t1.6435-9/176278383_747372715979013_6247976231722102239_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGX6VzpuDlHjacWo5caPmCFofbIpCGVtYqh9sikIZW1iu2lDXMYlLk2U_BpE_mabcl1QgHX_O5VMeh2eJ-yw7H_&_nc_ohc=UL_fKaJWNRAAX-NNVIB&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT82-HQZVz_3y9kO9XralfGGUUsLPg1Viq5I1w_jwRQQdA&oe=62EFFB63"><span
+                        class="name-user">Derek Alvarado</span>
+                </div>
+            </div>
+            <div class="div-flex"><img src="img/416e1bdb2032f59a4f17cf54054e9f24.jpg" alt="">
+                <span class="images-desc">Memes Evangelion</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t39.30808-6/271164668_4656648577760170_4367236565378227724_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEhn6m1q7v8TjmCcWdrqgZ7E8JZO73Y6IYTwlk7vdjohnHRwD77sfTrUv79e1NZZiUv7XbDw1h_PT6WtMQVy7oR&_nc_ohc=NVqHWE21LNQAX8dOaBN&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT88QEoC4WSJlyFLDQqREV4LmwjTddvdlvM1F1kqPl0DQA&oe=62CEA737"><span
+                        class="name-user">Gustavo Valladolid</span>
+                </div>
+            </div>
+            <div class="div-flex"><img src="img/21c52eba43d07295c6c4872e22e301ae.jpg" alt="">
+                <span class="images-desc">Rei Ayanami</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t1.6435-9/160800189_3786726238081862_6209585519493700811_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE2APDStaWUK9144Jn2DbxDSqk1h1m4039KqTWHWbjTf0BHXf6wzKZg-mgAypXZoD4z9uNnsHMqWq4BeZ0XT5Td&_nc_ohc=yX8-zzrLNrEAX--W0JS&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT8ohbjZTLGwCTU9X3hOFRLpZwotf2eoFTQr_z8dMAB6Hg&oe=62EE7734"><span
+                        class="name-user">Fabian Escobar</span>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
-
-<div class="flex-container">
-    <div class="column-2">
-        <div class="div-flex-tag">
-            <div class="flex-container-2"><div class="flex-number">1</div></div>
-            <div class="flex-container-2"><b class="title">Guitar</b></div>
-            <div class="flex-container-2"><img class="logo" src="https://www.istockphoto.com/photos/dark-color-gradient" alt="logo"></div>
-        </div>
-        <div class="div-flex-tag">
-            <div class="flex-container-2"><div class="flex-number">2</div></div>
-            <div class="flex-container-2"><b class="title">Bass</b></div>
-            <div class="flex-container-2"><img class="logo" src="https://www.istockphoto.com/photos/dark-color-gradient" alt="logo"></div>
-        </div>
-        <div class="div-flex">
-            <div class="div-flex-tag-2">
-                <div class="flex-container-2"><img class="user" src="partials/images/grad.jpg" alt="logo"></div>
-                <div class="flex-container-2"><p>@fender_guy</p></div>
-                <div class="flex-container-2"><a href="#">Follow</a></div>
+        <div class="flex-container">
+            <div class="div-flex"><img src="img/49d4dbc85a46b4dc7132e392f044cd1e.jpg" alt="">
+                <span class="images-desc">Rei Wallpaper</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t39.30808-6/243975617_603976027457301_4552729087765210378_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFA4IHf7ql4SfpGSgodPQhNAkpfqGfZ4FcCSl-oZ9ngV6khWnu3SbPpCD5Chy8nYIG1cu2byGdw-sA-R3jmDafS&_nc_ohc=U2aAyxapY20AX-oBfqz&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT_y1Q6Uzb_UPY0t0dKM3BqEXvbTNcI1Q9cn1T0Y8-EDBA&oe=62CE88E7"><span
+                        class="name-user">Pau Gaytán</span>
+                </div>
             </div>
-            <img src="partials/images/photo-1568193755668-aae18714a9f1.jpg" alt="">
-        </div>
-        <div class="div-flex">
-            <div class="div-flex-tag-2">
-                <div class="flex-container-2"><img class="user" src="partials/images/grad.jpg" alt="logo"></div>
-                <div class="flex-container-2"><p>@s_lappy</p></div>
-                <div class="flex-container-2"><a href="#">Follow</a></div>
+            <div class="div-flex"><img src="img/59f243312bdf30f8b11501336fd15bdf.jpg" alt="">
+                <span class="images-desc">Long Hair Rei</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t1.6435-9/103121721_2611336685756812_7881726129183974438_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGk3ZYhAOSwomsUzqCS8IqzMtOcu1vPdTUy05y7W891NZZ2IAQnTXgD1Qi_cAkt9zSerLVuK8ZsPpG_F0NxY6Y5&_nc_ohc=TWf0vleV5VwAX8phFa7&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT9BbbzYwcdj53ZjhrfLUWJf3yYbbw2mFvKDhPD95rxXqQ&oe=62EF0CFD"><span
+                        class="name-user">Joshua Áviles</span>
+                </div>
             </div>
-            <img src="partials/images/800px-Bass_guitar_477085398-744x528.jpg" alt="">
-        </div>
-        <div class="div-flex">
-            <div class="div-flex-tag-2">
-                <div class="flex-container-2"><img class="user" src="partials/images/grad.jpg" alt="logo"></div>
-                <div class="flex-container-2"><p>@redo</p></div>
-                <div class="flex-container-2"><a href="#">Follow</a></div>
+            <div class="div-flex"><img src="img/65d94b92e06386c51666252bc0932263.jpg" alt="">
+                <span class="images-desc">Wallpaper Evangelion</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t39.30808-6/285976997_2283771771788117_6855949504111643066_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEdsDV-v5HWJdJ3gnmdIUpouorsjiciRRK6iuyOJyJFElPxdJb6pzLRpxslDxW7fHHGjuPdy4IiYjCvlvaUXtdA&_nc_ohc=lNhnWhYInxsAX8fu69_&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT9AouRY9L2CN2bKq3pYPZ3xMUpWWwBFcaCl6pGTl9ADRw&oe=62CDB419"><span
+                        class="name-user">Carlos Salazar</span>
+                </div>
             </div>
-            <img src="partials/images/amp-buying-guide-1573684308.jpg" alt="">
+        </div>
+        <div class="flex-container">
+            <div class="div-flex"><img src="img/86aade5c29108736a4d7d822ec447cd2.jpg" alt="">
+                <span class="images-desc">Eva-01 Wallpaper</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t39.30808-6/275562898_1993007927546444_3189018989163122892_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHRRALaa8FlD21Cg1wQEceDSIJnQipaHTNIgmdCKlodM2ewna6AEeBz6Wff3StI2a0DcH5b80IuFTQjLkqO39wd&_nc_ohc=MRV8W96nbw8AX9Qzaaw&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT9KIXZFdvmK476J2VHzRA6Uq6vDh0v2ugPyDei26fOiNQ&oe=62CD026B"><span
+                        class="name-user">Main Mid</span>
+                </div>
+            </div>
+            <div class="div-flex"><img src="img/b22f8e3842eb9124b2b79627ddbf5a75.jpg" alt="">
+                <span class="images-desc">The end of Evangelion | Wallpaper</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t39.30808-6/277230401_1380579522377514_6788267498467963092_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE2F-4NliRevGn-oDQbFkYQhZV3JrQp11-FlXcmtCnXX1dqd0-0SOpf59UkPtqMrG4bLtRBUCC2451i5zmL9-S0&_nc_ohc=kdcKviLzUCsAX9ZD4Wg&_nc_oc=AQmFxmnxQEQMeVoDw9PLEgMG5SKQjSCXJb-O9qkfHPSCqqWSRsATBQzN0xCeR6bjBkOI4VJPy_fG4tnXAyuUGKgP&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT8NKhtrXeeijkAR05Ki4qxQ3pHXRc-dU5Qhpyq9vcGmwg&oe=62CE58E7"><span
+                        class="name-user">Alex Barraza</span>
+                </div>
+            </div>
+            <div class="div-flex"><img src="img/baae63666477b7ec661a30024d10ce9d.jpg" alt="">
+                <span class="images-desc">Mamisato</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t1.6435-9/70584610_2487736527971830_3053144559685992448_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH_1MXR4sXWwtPciAK8ME_uaJm926LyZIhomb3bovJkiKgbps3q1wwsiOiMN51MFfHmsw0nX5WVDANxgCFUB9jn&_nc_ohc=lSd5K_OvynMAX_6jeba&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT_EYjo2uX2LRV35mG3h2bkH2Vh0EPHAfPm4LI3yPTMRgw&oe=62EDCBC3"><span
+                        class="name-user">Luis Jelipe</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="div-flex"><img src="img/cd49609d843addaaefb3619c00bedbd9.jpg" alt="">
+                <span class="images-desc">Misato manga</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t39.30808-6/271665025_3020128501584450_8929601083992567632_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHRvMEGP-UUEEZ8jGibeBf2aIwaljaMRABojBqWNoxEAGnkewt-DMvR--nt5P3c7ZCklA2KAKghLuRfyPEcFiHA&_nc_ohc=PBDlmaOk44UAX-AvnP5&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT8Az4DaBpTEFxLD52zMgjVXXCOGguUWAnfNiwF313lzpQ&oe=62CE616E"><span
+                        class="name-user">Jonathan Rico</span>
+                </div>
+            </div>
+            <div class="div-flex"><img src="img/e01be905862ab60422ca1dccb5a24d3b.jpg" alt="">
+                <span class="images-desc">Shinji meme</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t1.6435-9/116616234_338362063825252_9106285353387175729_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGKGz3vYEkttf1iiELspEMvWHqK1ROoM6tYeorVE6gzq5DP3DFBFprtzYp49sfYxIbCt-boKRXn8WHQoTLPTdbf&_nc_ohc=PT0DzGAJUb0AX96eTek&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT-kQ2zn0fnmefxzIwOT9o1ppAz5jVf6K2aZ1RcmM6sHLg&oe=62F0169C"><span
+                        class="name-user">VelarGOD</span>
+                </div>
+            </div>
+            <div class="div-flex"><img src="img/fc85fbb1be747d4f8548170ff2ddae70.jpg" alt="">
+                <span class="images-desc">Asuka Wallpaper</span>
+                <div class="profile_photo">
+                    <img
+                        src="https://scontent.fcuu2-1.fna.fbcdn.net/v/t39.30808-6/278564256_3301173810131052_6007468091764630664_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGITJHJXe-vUv0CyBLleU6zF6IYwdCKVE8XohjB0IpUT0zOYHhAxymjyzzTMM38FnqQpqz1tMunQhU6DhSf82z6&_nc_ohc=Ol_MvaxzY8IAX93S_X1&_nc_ht=scontent.fcuu2-1.fna&oh=00_AT8iFjd53d5XqWfbyQg4sZ0Niow5Ya4cxmzvK9usus7RYg&oe=62CCFC6F"><span
+                        class="name-user">meriol</span>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="column-2">
-        <div class="div-flex-tag">
-            <div class="flex-container-2"><div class="flex-number">3</div></div>
-            <div class="flex-container-2"><b class="title">Acoustics</b></div>
-            <div class="flex-container-2"><img class="logo" src="www.istockphoto.com/photos/dark-color-gradient" alt="logo"></div>
-        </div>
-        <div class="div-flex-tag">
-            <div class="flex-container-2"><div class="flex-number">4</div></div>
-            <div class="flex-container-2"><b class="title">Notes</b></div>
-            <div class="flex-container-2"><img class="logo" src="www.istockphoto.com/photos/dark-color-gradient" alt="logo"></div>
-        </div>
-        <div class="div-flex">
-            <img src="partials/images/everything-about-electric-guitars-playing-1600x1063.jpg" alt="">
-            <div class="div-flex-tag-2">
-                <div class="flex-container-2"><img class="user" src="partials/images/grad.jpg" alt="logo"></div>
-                <div class="flex-container-2"><p>@studio_arc</p></div>
-                <div class="flex-container-2"><a href="#">Follow</a></div>
-            </div>
-        </div>
-        <div class="div-flex">
-            <img src="partials/images/Para Placa De Spotify  991.jpg" alt="">
-            <div class="div-flex-tag-2">
-                <div class="flex-container-2"><img class="user" src="partials/images/grad.jpg" alt="logo"></div>
-                <div class="flex-container-2"><p>@emerald_productions</p></div>
-                <div class="flex-container-2"><a href="#">Follow</a></div>
-            </div>
-        </div>
-        <div class="div-flex">
-            <img src="partials/images/9d09e1fe11afce85093f055dcb5297cf.jpg" alt="image">
-            <div class="div-flex-tag-2">
-                <div class="flex-container-2"><img class="user" src="partials/images/grad.jpg" alt="logo"></div>
-                <div class="flex-container-2"><p>@music_mania</p></div>
-                <div class="flex-container-2"><a href="#">Follow</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="column-2">
-        <div class="div-flex-tag">
-            <div class="flex-container-2"><div class="flex-number">5</div></div>
-            <div class="flex-container-2"><b class="title">Tempo</b></div>
-            <div class="flex-container-2"><img class="logo" src="https://www.istockphoto.com/photos/dark-color-gradient" alt="logo"></div>
-        </div>
-        <div class="div-flex-tag">
-            <div class="flex-container-2"><div class="flex-number">6</div></div>
-            <div class="flex-container-2"><b class="title">Tuner</b></div>
-            <div class="flex-container-2"><img class="logo" src="https://www.istockphoto.com/photos/dark-color-gradient" alt="logo"></div>
-        </div>
-        <div class="div-flex">
-            <div class="div-flex-tag-2">
-                <div class="flex-container-2"><img class="user" src="img/grad.jpg" alt="logo"></div>
-                <div class="flex-container-2"><p>@unplugged</p></div>
-                <div class="flex-container-2"><a href="#">Follow</a></div>
-            </div>
-            <img src="img/4767341c-082819-insync-acousticunder1000-1200x628.jpg" alt="">
-        </div>
-        <div class="div-flex">
-            <div class="div-flex-tag-2">
-                <div class="flex-container-2"><img class="user" src="img/grad.jpg" alt="logo"></div>
-                <div class="flex-container-2"><p>@super_basssss</p></div>
-                <div class="flex-container-2"><a href="#">Follow</a></div>
-            </div>
-            <img src="img/02_Bass_OpeningAct_Mobile_02@2x.jpg" alt="">
-        </div>
-        <div class="div-flex">
-            <div class="div-flex-tag-2">
-                <div class="flex-container-2"><img class="user" src="img/grad.jpg" alt="logo"></div>
-                <div class="flex-container-2"><p>@sorrow_and_silence</p></div>
-                <div class="flex-container-2"><a href="#">Follow</a></div>
-            </div>
-            <img src="img/How to Make an Acoustic Guitar.jpg" alt="">
-        </div>
-    </div>
-    <div class="column-2">
-        <div class="div-flex-2">
-            <h5 class="trends">Trending People</h5>
-            <div class="hr"></div>
-            <div class="div-flex-tag-3">
-                <div class="flex-container-grad"></div>
-                <div class="flex-container-3"><a class="follow" href="#">@sorrow_and_silence</a></div>
-                <div class="flex-container-3"><a class="follow" href="#"><h5>+</h5></a></div>
-            </div>
-            <div class="hr"></div>
-            <div class="div-flex-tag-3">
-                <div class="flex-container-grad"></div>
-                <div class="flex-container-3"><a class="follow" href="#">@turco_av07</a></div>
-                <div class="flex-container-3"><a class="follow" href="#"><h5>+</h5></a></div>
-            </div>
-            <div class="hr"></div>
-            <div class="div-flex-tag-3">
-                <div class="flex-container-grad"></div>
-                <div class="flex-container-3"><a class="follow" href="#">@easter_egg</a></div>
-                <div class="flex-container-3"><a class="follow" href="#"><h5>+</h5></a></div>
-            </div>
-            <div class="hr"></div>
-            <div class="div-flex-tag-3">
-                <div class="flex-container-grad"></div>
-                <div class="flex-container-3"><a class="follow" href="#">@fourth_wall</a></div>
-                <div class="flex-container-3"><a class="follow" href="#"><h5>+</h5></a></div>
-            </div>
-            <div class="hr"></div>
-            <div class="div-flex-tag-3">
-                <div class="flex-container-grad"></div>
-                <div class="flex-container-3"><a class="follow" href="#">@do_u_see_this</a></div>
-                <div class="flex-container-3"><a class="follow" href="#"><h5>+</h5></a></div>
-            </div>
-            <div class="hr"></div>
-            <div class="div-flex-tag-3">
-                <div class="flex-container-grad"></div>
-                <div class="flex-container-3"><a class="follow" href="#">@emanchondo</a></div>
-                <div class="flex-container-3"><a class="follow" href="#"><h5>+</h5></a></div>
-            </div>
-            <div class="hr"></div>
-            <div class="flex-container-4"><a href="#" class="more">See More...</a></div>
-        </div>
-    </div>
-</div>

@@ -19,6 +19,7 @@ app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 3000);
 
 //Middlewares
+app.use('/public', express.static(path.join(__dirname, '/public')));
 app.use( express.static( "public" ) );
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}))
@@ -43,7 +44,6 @@ app.use((req, res, next) => {
 
 //Routes
 app.use('/', require('./routes/index'));
-
 
 // Starting server
 
