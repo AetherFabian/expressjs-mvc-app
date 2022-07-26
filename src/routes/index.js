@@ -33,6 +33,7 @@ router.get('/logout', (req, res, next) => {
         if (err){
             return next(err);
         }
+        req.session = null;
         res.redirect('/');
     });
 });
@@ -47,7 +48,7 @@ router.get('/profile', (req, res, next) => {
 });
 
 function isAuthenticated(req, res, next){
-    if (req.isAuthenticated){
+    if (req.isAuthenticated()){
         return next();
     }
     res.redirect('/');
